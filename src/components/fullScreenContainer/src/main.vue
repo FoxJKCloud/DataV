@@ -30,6 +30,8 @@ export default {
       setAppScale()
 
       this.ready = true
+      
+      this.$emit('ready', this.ready);
     },
     initConfig () {
       const { dom } = this
